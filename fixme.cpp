@@ -31,7 +31,7 @@ bool SessionAgregator::sessionDead(std::string uuidForSession) {
     }
 }
 
-void SessionAgregator::updateSessionTime(const std::string &uuidForSession, Session &thisSession) {
+void SessionAgregator::updateSessionTimeZhenya(const std::string &uuidForSession, Session &thisSession) {
     // обновляем сессию, т.к. поступил новый запрос
     thisSession.creationTime = getCurrentTime();
     // кладём обновлённое значение в мапу
